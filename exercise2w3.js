@@ -1,15 +1,12 @@
-// var nama = ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '!']; Ini dilakukan karena untuk mengecek dengan mudah
-var nama = 'Hello World!'
-var namaKebalik = [''];
+var nama = 'Hello World!';
 
 function balikNama(nama) {
-    var namaLength = nama.length;
-    var i = 0;
-    for (namaLength; namaLength > i; namaLength--) {
-        namaKebalik = namaKebalik + nama[namaLength - 1];
+    var namaKebalik = '';
+    var namaLength = nama.length
+    for (var i = namaLength - 1; 0 <= i; i--) {
+        namaKebalik = namaKebalik + nama[i];
     }
-
-    return namaKebalik;
+    return namaKebalik
 }
 
 console.log(balikNama(nama));

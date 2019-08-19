@@ -1,11 +1,9 @@
 function mengelompokkanAngka(arr) {
-    var arrayBaru = [
-        [],
-        [],
-        []
-    ];
-    var i = 0;
-    for (i; i < arr.length; i++) {
+    var arrayBaru = [];
+    var kelipatan2 = [];
+    var kelipatan3 = [];
+
+    for (var i = 0; i < arr.length; i++) {
         var angka = arr[i];
         if (arr[i] % 3 === 0) {
             arrayBaru[2].push(angka)

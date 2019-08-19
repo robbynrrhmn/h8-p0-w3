@@ -2,8 +2,7 @@ function targetTerdekat(arr) {
     var mencariO = arr.indexOf('o');
     var selisihOX = 0; //mencariO-i
     var realJarak = arr.length; //return hasil
-    var i = 0;
-    for (i; i < arr.length; i++) {
+    for (var i = 0; i < arr.length; i++) {
         if (arr[i] === 'x') {
             selisihOX = Math.abs(mencariO - i);
             if (selisihOX < realJarak) {

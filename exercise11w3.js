@@ -1,12 +1,14 @@
 function tentukanDeretAritmatika(arr) {
     var selisih = arr[1] - arr[0];
     var selisihAntarArray = 0;
-    var i = 0;
 
-    for (i; i < arr.length - 1; i++) {
+    for (var i = 0; i < arr.length - 1; i++) {
         selisihAntarArray = arr[i + 1] - arr[i];
+        if (selisih != selisihAntarArray) {
+            return false;
+        }
     }
-    return selisih === selisihAntarArray;
+    return true;
 }
 // TEST CASES
 console.log(tentukanDeretAritmatika([1, 2, 3, 4, 5, 6])); // true
